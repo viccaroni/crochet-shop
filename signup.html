@@ -24,177 +24,121 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <main>
-        <main>
-            <div class="bubbles">
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
-            <div class="container">
+
+    <main style="overflow: hidden;">
+      <div class="bubbles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center flex-wrap">
+          <div class="content">
+            <div class="text my-4 text-grey"></div>
+          </div>
+          <div class="form-card" >
+            <div class="card" style="padding-bottom: 32em; background-color: rgb(235, 235, 235);    margin:5px;
+            padding:5px;
+            width: 500px;
+            height: 32em;
+            overflow: auto;
+            text-align:justify;">
               <div
-                class="d-flex justify-content-center align-items-center flex-wrap"
+                class="card-head bg-white"
+                style="padding-bottom: 5em; overflow: hidden"
               >
-                <div class="content">
-                  <div class="text my-4 text-grey"></div>
+                <p class="m-0 text-center fs-08">SIGN UP</p>
+                <div
+                  class="d-flex align-items-center justify-content-center my-2"
+                >
+                  <div class="btn btn-default">
+                    <span
+                      ><a
+                        href="index.html"
+                        style="text-decoration: none; color: #4f4c4c"
+                        >BACK TO HOMEPAGE</a
+                      ></span
+                    >
+                  </div>
+                  <div class="btn btn-default mx-3">
+                    <span
+                      ><a
+                        href="login.html"
+                        style="text-decoration: none; color: #4f4c4c;"
+                        >LOGIN</a
+                      ></span
+                    >
+                  </div>
                 </div>
-                <div class="form-card">
-                  <div class="card">
-                    <div class="card-head bg-white">
-                      <p class="m-0 text-center fs-08">SIGN UP</p>
-                      <div
-                        class="d-flex align-items-center justify-content-center my-2"
-                      >
-                        <div class="btn btn-default">
-                          <span
-                            ><a
-                              href="index.html"
-                              style="text-decoration: none; color: #4f4c4c"
-                              >BACK TO HOMEPAGE</a
-                            ></span
-                          >
-                        </div>
-                        <div class="btn btn-default mx-3">
-                          <span
-                            ><a
-                              href="login.html"
-                              style="text-decoration: none; color: #4f4c4c"
-                              >LOGIN</a
-                            ></span
-                          >
-                        </div>
+              </div>
+              <div class="card-form">
+                <div class="row">
+                  <div class="col-md-6 mt-md-0 mt-3">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" required />
+                  </div>
+                  <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" required />
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                      <label>Birthday</label>
+                      <input type="date" class="form-control" required />
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-3">
+                      <label>Gender</label>
+                      <div class="d-flex align-items-center mt-2">
+                        <label class="option">
+                          <input type="radio" name="radio" />Male
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="option ms-4">
+                          <input type="radio" name="radio" />Female
+                          <span class="checkmark"></span>
+                        </label>
                       </div>
                     </div>
-                    <div class="form">
-                        <div class="row">
-                          <div class="col-md-6 mt-md-0 mt-3">
-                            <label>First Name</label>
-                            <input type="text" class="form-control" required />
-                          </div>
-                          <div class="col-md-6 mt-md-0 mt-3">
-                            <label>Last Name</label>
-                            <input type="text" class="form-control" required />
-                          </div>
-                          <div class="row">
-                            <div class="col-md-6 mt-md-0 mt-3">
-                              <label>Birthday</label>
-                              <input type="date" class="form-control" required />
-                            </div>
-                            <div class="col-md-6 mt-md-0 mt-3">
-                                <label>Gender</label>
-                                <div class="d-flex align-items-center mt-2">
-                                  <label class="option">
-                                    <input type="radio" name="radio" />Male
-                                    <span class="checkmark"></span>
-                                  </label>
-                                  <label class="option ms-4">
-                                    <input type="radio" name="radio" />Female
-                                    <span class="checkmark"></span>
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mt-md-0 mt-3">
-                                  <label>Email</label>
-                                  <input type="email" class="form-control" required />
-                                </div>
-                                <div class="col-md-6 mt-md-0 mt-3">
-                                    <label>Password</label>
-                                    <input type="text" class="form-control" required />
-                                  </div>
-                                <div class="my-md-2 my-3">
-                                    <label>Subject</label>
-                                    <select id="sub" required>
-                                      <option value="" selected hidden>How'd You Find out About Us?</option>
-                                      <option value="Maths">A Friend</option>
-                                      <option value="Science">An Ad</option>
-                                      <option value="Social">Social Media</option>
-                                      <option value="Hindi">Just Luck</option>
-                                    </select>
-                                </div>
-                                <div class="btn btn-default mt-3">Submit</div>
-                               
-      <!-- <div class="wrapper rounded bg-white">
-        <div class="h3">Registration Form</div>
-
-        <div class="form">
-          <div class="row">
-            <div class="col-md-6 mt-md-0 mt-3">
-              <label>First Name</label>
-              <input type="text" class="form-control" required />
-            </div>
-            <div class="col-md-6 mt-md-0 mt-3">
-              <label>Last Name</label>
-              <input type="text" class="form-control" required />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mt-md-0 mt-3">
-              <label>Birthday</label>
-              <input type="date" class="form-control" required />
-            </div>
-            <div class="col-md-6 mt-md-0 mt-3">
-              <label>Gender</label>
-              <div class="d-flex align-items-center mt-2">
-                <label class="option">
-                  <input type="radio" name="radio" />Male
-                  <span class="checkmark"></span>
-                </label>
-                <label class="option ms-4">
-                  <input type="radio" name="radio" />Female
-                  <span class="checkmark"></span>
-                </label>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                      <label>Email</label>
+                      <input type="email" class="form-control" required />
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-3">
+                      <label>Password</label>
+                      <input type="password" class="form-control" required />
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <label>Password Confirm</label>
+                        <input type="password" class="form-control" required />
+                      </div>
+                    <div class="my-md-2 my-3">
+                      <label>Subject</label>
+                      <select id="sub" required>
+                        <option value="" selected hidden>
+                          How'd You Find out About Us?
+                        </option>
+                        <option value="Maths">A Friend</option>
+                        <option value="Science">An Ad</option>
+                        <option value="Social">Social Media</option>
+                        <option value="Hindi">Just Luck</option>
+                      </select>
+                    </div>
+                    <div
+                      class="btn btn-default"
+                      style="background-color: #841be7; color: white;"
+                    >
+                      Submit
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6 mt-md-0 mt-3">
-              <label>Email</label>
-              <input type="email" class="form-control" required />
-            </div>
-            <div class="col-md-6 mt-md-0 mt-3">
-              <label>Phone Number</label>
-              <input type="tel" class="form-control" required />
-            </div>
-          </div>
-          <div class="my-md-2 my-3">
-            <label>Subject</label>
-            <select id="sub" required>
-              <option value="" selected hidden>How'd You Find out About Us?</option>
-              <option value="Maths">A Friend</option>
-              <option value="Science">An Ad</option>
-              <option value="Social">Social Media</option>
-              <option value="Hindi">Just Luck</option>
-            </select>
-          </div>
-          <div class="btn btn-default mt-3">Submit</div>
-          <div class="btn btn-default">
-            <span
-              ><a
-                href="index.html"
-                style="text-decoration: none; color: #4f4c4c"
-                >BACK TO HOMEPAGE</a
-              ></span
-            >
-          </div>
-          <div class="btn btn-default mx-3">
-            <span
-              ><a
-                href="signup.html"
-                style="text-decoration: none; color: #4f4c4c"
-                >SIGN-UP</a
-              ></span
-            >
-          <div class="bubbles" style="width: 100%;">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
         </div>
-      </div> -->
+      </div>
     </main>
   </body>
 </html>
