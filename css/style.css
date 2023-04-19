@@ -351,3 +351,12 @@ body::-webkit-scrollbar {
     margin: 20px;
   }
 }
+.buy-now{
+    background-color: #841be7;
+     color: white; 
+     border: 4px solid #841be7;
+}
+.buy-now:hover{
+background-color: #432262;
+border: 4px solid #432262;
+}
