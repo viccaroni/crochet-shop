@@ -33,15 +33,163 @@
           #intro-example {
             height: 400px;
           }
-  
+
           /* Height for devices larger than 992px */
           @media (min-width: 992px) {
             #intro-example {
               height: 600px;
             }
           }
+
+          .title {
+            margin-bottom: 5vh;
+          }
+          .card {
+            margin: auto;
+            max-width: 950px;
+            width: 90%;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 1rem;
+            border: transparent;
+            top: 3em;
+          }
+          @media (max-width: 767px) {
+            .card {
+              margin: 3vh auto;
+            }
+          }
+          .cart {
+            background-color: #fff;
+            padding: 4vh 5vh;
+            border-bottom-left-radius: 1rem;
+            border-top-left-radius: 1rem;
+          }
+          @media (max-width: 767px) {
+            .cart {
+              padding: 4vh;
+              border-bottom-left-radius: unset;
+              border-top-right-radius: 1rem;
+            }
+          }
+          .summary {
+            background-color: #ddd;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            padding: 4vh;
+            color: rgb(65, 65, 65);
+          }
+          @media (max-width: 767px) {
+            .summary {
+              border-top-right-radius: unset;
+              border-bottom-left-radius: 1rem;
+            }
+          }
+          .summary .col-2 {
+            padding: 0;
+          }
+          .summary .col-10 {
+            padding: 0;
+          }
+          .row {
+            margin: 0;
+          }
+          .title b {
+            font-size: 1.5rem;
+          }
+          .main {
+            margin: 0;
+            padding: 2vh 0;
+            width: 100%;
+          }
+          .col-2,
+          .col {
+            padding: 0 1vh;
+          }
+          a {
+            padding: 0 1vh;
+          }
+          .close {
+            margin-left: auto;
+            font-size: 0.7rem;
+          }
+          img {
+            width: 3.5rem;
+          }
+          .back-to-shop {
+            margin-top: 4.5rem;
+          }
+          h5 {
+            margin-top: 4vh;
+          }
+          hr {
+            margin-top: 1.25rem;
+          }
+          form {
+            padding: 2vh 0;
+          }
+          select {
+            border: 1px solid rgba(0, 0, 0, 0.137);
+            padding: 1.5vh 1vh;
+            margin-bottom: 4vh;
+            outline: none;
+            width: 100%;
+            background-color: rgb(247, 247, 247);
+          }
+          input {
+            border: 1px solid rgba(0, 0, 0, 0.137);
+            padding: 1vh;
+            margin-bottom: 4vh;
+            outline: none;
+            width: 100%;
+            background-color: rgb(247, 247, 247);
+          }
+          input:focus::-webkit-input-placeholder {
+            color: transparent;
+          }
+          .btn {
+            background-color: #000;
+            border-color: #000;
+            color: white;
+            width: 100%;
+            font-size: 0.7rem;
+            margin-top: 4vh;
+            padding: 1vh;
+            border-radius: 0;
+          }
+          .btn:focus {
+            box-shadow: none;
+            outline: none;
+            box-shadow: none;
+            color: white;
+            -webkit-box-shadow: none;
+            -webkit-user-select: none;
+            transition: none;
+          }
+          .btn:hover {
+            color: white;
+          }
+          a {
+            color: black;
+            
+          }
+          a:hover {
+            color: black;
+            text-decoration: none;
+    
+          }
+          #code {
+            background-image: linear-gradient(
+                to left,
+                rgba(255, 255, 255, 0.253),
+                rgba(255, 255, 255, 0.185)
+              ),
+              url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+            background-repeat: no-repeat;
+            background-position-x: 95%;
+            background-position-y: center;
+          }
         </style>
-  
+
         <nav class="navbar sticky-top navbar-light navbar-expand-lg">
           <div
             class="collapse navbar-collapse d-flex justify-content-center"
@@ -61,12 +209,12 @@
                 <a class="nav-link" href="signup.html">Sign-Up</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="check">Checkout</a>
-                </li>
+                <a class="nav-link" href="checkout.html">Checkout</a>
+              </li>
             </ul>
           </div>
         </nav>
-  
+
         <!-- Background image -->
         <div
           id="intro-example"
@@ -79,67 +227,169 @@
         >
           <div
             class="mask"
-            style="background-color: rgba(109, 52, 99, 0.7); height: 60em"
+            style="background-color: rgba(109, 52, 99, 0.7); height: 39em"
           >
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white">
-                <img
-                  src="/images/Froggy's Workshop.png"
-                  alt="froggy's workshop logo"
-                />
-                <h5 class="mb-4" style="color: rgb(58, 21, 45)">
-                    Welcome to our online store specializing in beautifully
-                    handcrafted crocheted clothing! We offer a wide range of unique
-                    and stylish garments that are perfect for fashion-conscious
-                    individuals who appreciate the artistry and craftsmanship of
-                    crocheted clothing. Our collection includes a variety of cozy
-                    sweaters, trendy cardigans, elegant shawls, and chic accessories
-                    that are sure to elevate your wardrobe and keep you looking
-                    fabulous in every season.
-                  </h5>
-                  <h5 class="mb-4" style="color: rgb(58, 21, 45)">
-                    At our store, we take great pride in our attention to detail and
-                    commitment to using only the finest quality materials. Each
-                    piece is lovingly made by our skilled artisans who pour their
-                    creativity and passion into every stitch, resulting in exquisite
-                    garments that are not only fashionable but also comfortable to
-                    wear. Whether you're dressing up for a special occasion or
-                    adding a touch of boho-chic to your everyday look, our crocheted
-                    clothing is designed to make you feel confident and stylish.
-                  </h5>
-                  <a
-                    class="btn btn-outline-light btn-lg m-2"
-                    href="shop.html"
-                    role="button"
-                    rel="nofollow"
-                    style="color: rgb(58, 21, 45)"
-                    >Start Shopping</a
+            <div
+              class="card"
+              style="
+                margin: auto;
+                max-width: 950px;
+                width: 90%;
+                box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                border-radius: 1rem;
+                border: transparent;
+              "
+            >
+              <div class="row">
+                <div
+                  class="col-md-8 cart"
+                  style="
+                    background-color: #fff;
+                    padding: 4vh 5vh;
+                    border-bottom-left-radius: 1rem;
+                    border-top-left-radius: 1rem;
+                  "
+                >
+                  <div class="title" style="margin-bottom: 5vh">
+                    <div class="row">
+                      <div class="col">
+                        <h4><b>Shopping Cart</b></h4>
+                      </div>
+                      <div class="col align-self-center text-right text-muted">
+                        3 items
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row border-top border-bottom">
+                    <div class="row main align-items-center">
+                      <div class="col-2" style="padding: 0">
+                        <img
+                          class="img-fluid"
+                          src="/images/pexels-pixabay-207272 (1).jpg"
+                        />
+                      </div>
+                      <div class="col">
+                        <div class="row text-muted">Rat Buddy</div>
+                    
+                      </div>
+                      <div class="col">
+                        <a href="#">-</a><a href="#" class="border">1</a
+                        ><a href="#">+</a>
+                      </div>
+                      <div class="col">
+                        &dollar; 25.00 <span class="close">&#10005;</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="row main align-items-center">
+                      <div class="col-2" style="padding: 0">
+                        <img
+                          class="img-fluid"
+                          src="images/pexels-alina-vilchenko-10544565.jpg"
+                        />
+                      </div>
+                      <div class="col">
+                        <div class="row text-muted">Blanket</div>
+         
+                      </div>
+                      <div class="col">
+                        <a href="#">-</a><a href="#" class="border">1</a
+                        ><a href="#">+</a>
+                      </div>
+                      <div class="col">
+                        &dollar; 70.00 <span class="close">&#10005;</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row border-top border-bottom">
+                    <div class="row main align-items-center">
+                      <div class="col-2" style="padding: 0">
+                        <img
+                          class="img-fluid"
+                          src="/images/pexels-muhammadtaha-ibrahim-3310845.jpg"
+                        />
+                      </div>
+                      <div class="col">
+                        <div class="row text-muted">Sweater</div>
+           
+                      </div>
+                      <div class="col">
+                        <a href="#">-</a><a href="#" class="border">1</a
+                        ><a href="#">+</a>
+                      </div>
+                      <div class="col">
+                        &dollar; 56.00 <span class="close">&#10005;</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back-to-shop">
+                    <a href="#">&leftarrow;</a
+                    ><span class="text-muted"><a href="index.html">Back to shop</a> </span>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4 summary"
+                  style="
+                    background-color: #eeee;
+                    border-top-right-radius: 1rem;
+                    border-bottom-right-radius: 1rem;
+                    padding: 4vh;
+                    color: rgb(65, 65, 65);
+                  "
+                >
+                  <div>
+                    <h5><b>Summary</b></h5>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col" style="padding-left: 0">ITEMS 3</div>
+                    <div class="col text-right">&dollar; 151.00</div>
+                  </div>
+                  <form>
+                    <p>SHIPPING</p>
+                    <select>
+                      <option class="text-muted">
+                        Standard-Delivery- &dollar;5.00
+                      </option>
+                      <option class="text-muted">
+                       Overnight-Shipping- &dollar;9.00
+                      </option>
+                    </select>
+                    <p>GIVE CODE</p>
+                    <input id="code" placeholder="Enter your code" />
+                  </form>
+                  <div
+                    class="row"
+                    style="
+                      border-top: 1px solid rgba(0, 0, 0, 0.1);
+                      padding: 2vh 0;
+                    "
                   >
-                  <a
-                    class="btn btn-outline-light btn-lg m-2"
-                    href="login.html"
-                    role="button"
-                    style="color: rgb(58, 21, 45)"
-                    >Sign-In/ Sign-Up</a
-                  >
+                    <div class="col">TOTAL PRICE</div>
+                    <div class="col text-right">&dollar; 151.00</div>
+                  </div>
+                  <button class="btn" style="background-color: #841be7; border: #841be7;">CHECKOUT</button>
                 </div>
               </div>
             </div>
+
+            <footer
+              class="bg-light text-center text-lg-start"
+              style="position: fixed; left: 0; bottom: 0; width: 100%"
+            >
+              <!-- Copyright -->
+              <div
+                class="text-center p-3"
+                style="background-color: rgba(0, 0, 0, 0.2)"
+              >
+                © 2023 Copyright Viccaroni
+              </div>
+              <!-- Copyright -->
+            </footer>
           </div>
-                <main>
-                    
-                    <footer class="bg-light text-center text-lg-start">
-                      <!-- Copyright -->
-                      <div
-                        class="text-center p-3"
-                        style="background-color: rgba(0, 0, 0, 0.2)"
-                      >
-
-                        © 2023 Copyright Viccaroni
-                      </div>
-                      <!-- Copyright -->
-                    </footer>
-                  </main>
-
+        </div>
+      </header>
+    </header>
   </body>
 </html>
