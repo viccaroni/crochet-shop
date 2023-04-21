@@ -41,7 +41,8 @@ https://github.com/viccaroni/crochet-shop.git
 ![image](https://user-images.githubusercontent.com/130574380/233570640-e4116f87-043f-490b-a509-2427cb744fb0.png)
 ---
 # Most interesting code i wrote
-` <header class="sticky-top">
+```
+<header class="sticky-top">
       <nav class="navbar navbar-light navbar-expand-lg">
         <div
           class="collapse navbar-collapse d-flex justify-content-center"
@@ -66,4 +67,6 @@ https://github.com/viccaroni/crochet-shop.git
           </ul>
         </div>
       </nav>
-    </header>`
+    </header>
+    ```
+* It was interesting to me since i struggled so much to get it to work and to also figure out how to have it move with the screen 
