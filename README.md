@@ -69,7 +69,4 @@ https://github.com/viccaroni/crochet-shop.git
         </div>
       </nav>
     </header>
-    ```
-   
-   
-
+```
