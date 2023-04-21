@@ -4,7 +4,9 @@ A lovely store where you can get all kinds of crochet made items and products.
 I pushed for a pastel, colourful theme for my website which i personally think made it seem a lot more inviting and fun.
 ---
 # Opening my file
-```https://github.com/viccaroni/crochet-shop.git```
+```
+https://github.com/viccaroni/crochet-shop.git
+```
 ---
 
 # Header
