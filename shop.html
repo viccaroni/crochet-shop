@@ -25,22 +25,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <header>
-      <!-- Intro settings -->
-      <style>
-        /* Default height for small devices */
-        #intro-example {
-          height: 400px;
-        }
-
-        /* Height for devices larger than 992px */
-        @media (min-width: 992px) {
-          #intro-example {
-            height: 600px;
-          }
-        }
-      </style>
-
+    <header class="sticky-top">
       <nav class="navbar sticky-top navbar-light navbar-expand-lg">
         <div class="collapse navbar-collapse d-flex justify-content-center">
           <ul class="navbar-nav">
@@ -62,7 +47,8 @@
           </ul>
         </div>
       </nav>
-
+    </header>
+    <main>
       <div
         id="intro-example"
         class="p-5 text-center bg-image"
@@ -218,7 +204,6 @@
           </div>
           <!-- /.row -->
 
-          <!-- Pagination -->
           <ul class="pagination justify-content-center">
             <li class="page-item">
               <a class="page-link" href="#" aria-label="Previous">
@@ -243,18 +228,7 @@
             </li>
           </ul>
         </div>
-        <!-- /.container -->
-        <footer class="bg-light text-center text-lg-start">
-          <!-- Copyright -->
-          <div
-            class="text-center p-3"
-            style="background-color: rgba(0, 0, 0, 0.2)"
-          >
-            © 2023 Copyright Viccaroni
-          </div>
-          <!-- Copyright -->
-        </footer>
       </main>
-    </header>
+    </main>
   </body>
 </html>

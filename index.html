@@ -25,23 +25,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <header>
-      <!-- Intro settings -->
-      <style>
-        /* Default height for small devices */
-        #intro-example {
-          height: 400px;
-        }
-
-        /* Height for devices larger than 992px */
-        @media (min-width: 992px) {
-          #intro-example {
-            height: 600px;
-          }
-        }
-      </style>
-
-      <nav class="navbar sticky-top navbar-light navbar-expand-lg">
+    <header class="sticky-top">
+      <nav class="navbar navbar-light navbar-expand-lg">
         <div
           class="collapse navbar-collapse d-flex justify-content-center"
           id="collapsibleNavbar"
@@ -60,12 +45,13 @@
               <a class="nav-link" href="signup.html">Sign-Up</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="checkout.html">Checkout</a>
-              </li>
+              <a class="nav-link" href="checkout.html">Checkout</a>
+            </li>
           </ul>
         </div>
       </nav>
-
+    </header>
+    <main>
       <!-- Background image -->
       <div
         id="intro-example"
@@ -73,12 +59,11 @@
         style="
           background-image: url('/images/pastel-background-goo-700x394.jpg');
           background-repeat: no-repeat;
-          height: 50%;
         "
       >
         <div
           class="mask"
-          style="background-color: rgba(109, 52, 99, 0.7); height: 60em"
+          style="background-color: rgba(109, 52, 99, 0.7); height: 69em"
         >
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white">
@@ -96,7 +81,7 @@
                 individuals who appreciate the artistry and craftsmanship of
                 crocheted clothing. Our collection includes a variety of cozy
                 sweaters, trendy cardigans, elegant shawls, and chic accessories
-                that are sure to elevate your wardrobe and keep you looking 
+                that are sure to elevate your wardrobe and keep you looking
                 fabulous in every season.
               </h5>
               <h5 class="mb-4" style="color: rgb(58, 21, 45)">
@@ -128,19 +113,6 @@
           </div>
         </div>
       </div>
-      <!-- Background image -->
-    </header>
-    <main>
-      <footer class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div
-          class="text-center p-3"
-          style="background-color: rgba(0, 0, 0, 0.2)"
-        >
-          © 2023 Copyright Viccaroni
-        </div>
-        <!-- Copyright -->
-      </footer>
     </main>
   </body>
 </html>
