@@ -41,6 +41,7 @@ https://github.com/viccaroni/crochet-shop.git
 ![image](https://user-images.githubusercontent.com/130574380/233570640-e4116f87-043f-490b-a509-2427cb744fb0.png)
 ---
 # Most interesting code i wrote
+* It was interesting as i spent a lot of time trying to figure out how to make it stick to the top of the screen which i realised it was really simple and just also trying to find a nav bar that i think suited my website
 ```
 <header class="sticky-top">
       <nav class="navbar navbar-light navbar-expand-lg">
@@ -69,4 +70,6 @@ https://github.com/viccaroni/crochet-shop.git
       </nav>
     </header>
     ```
-* It was interesting to me since i struggled so much to get it to work and to also figure out how to have it move with the screen 
+   
+   
+
